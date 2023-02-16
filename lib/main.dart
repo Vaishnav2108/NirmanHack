@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/dbbox.dart';
 import 'attendance.dart';
 import 'square.dart';
 import 'package:flutter_application_1/constants/routes.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.lightGreen),
       debugShowCheckedModeBanner: false,
-      home: NavigationBarPage(),
+      home: dbbox(),
       title: 'Nirman',
       routes: {
         addTaskRoute: (context) => const Settask(),

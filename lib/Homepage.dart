@@ -92,16 +92,21 @@ class _HomepageState extends State<Homepage> {
             actions: <Widget>[
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  side: BorderSide(width: 3, color: Gcolors.primaryColor400),
-                ),
+                    side: BorderSide(
+                      width: 3,
+                      color: Gcolors.primaryColor400,
+                    ),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16))),
                 onPressed: () => Navigator.of(context).pop(false),
                 child: Text('No', style: TextStyle(color: Colors.white)),
               ),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  backgroundColor: Color(0xffB8FC27),
-                  side: BorderSide(width: 3, color: Gcolors.primaryColor400),
-                ),
+                    backgroundColor: Color(0xffB8FC27),
+                    side: BorderSide(width: 3, color: Gcolors.primaryColor400),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16))),
                 onPressed: () => Navigator.of(context).pop(true),
                 child: Text('Yes', style: TextStyle(color: Colors.black)),
               ),
